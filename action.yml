@@ -23,7 +23,7 @@ runs:
         ref: ${{ inputs.ref }}
         fetch-depth: ${{ inputs.fetch-depth }}
     - name: Setup Bun ${{ inputs.node-version }}
-      uses: actions/setup-bun@v1
+      uses: oven-sh/setup-bun@v1
       with:
         bun-version: ${{ inputs.bun-version }}
     - name: Install dependencies
