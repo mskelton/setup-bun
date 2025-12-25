@@ -22,7 +22,7 @@ runs:
       with:
         ref: ${{ inputs.ref }}
         fetch-depth: ${{ inputs.fetch-depth }}
-    - name: Setup Bun ${{ inputs.node-version }}
+    - name: Setup Bun ${{ inputs.bun-version }}
       uses: oven-sh/setup-bun@v1
       with:
         bun-version: ${{ inputs.bun-version }}
